@@ -41,10 +41,10 @@ source .venv/bin/activate
 | Метод   | Короктий пример |
 | ---------- | ----------------- | --------------|
 | exec_sql("SQL CODE") | Выполняет произвольный запрос, возвращает fetchall() если он SELECT |
-| select('tbl', columns=['a','b'], where='a>5')        | Генерирует SELECT с опциональными колонками и WHERE                |
-| insert_one('tbl', {'a':1,'b':'x'})      | Один INSERT              |
-| insert_many('tbl', [ {...}, {...} ]) | Пакетная вставка, вызывает insert_one для каждого словаря              |
-| update('tbl', {'a':10}, where='b="x"')      | UPDATE tbl SET a = 10 WHERE …              |
-| delete('tbl', 'a>100')     | DELETE FROM tbl WHERE …                |
-| clear_table('tbl')     | DELETE FROM tbl                |
-| create_table('tbl', columns=('c1 TEXT','c2 INT'), referense='…')     | Создаёт таблицу, если не существует               |
+| select('tbl', columns=['a','b'], where='a>5') | Генерирует SELECT с опциональными колонками и WHERE |
+| insert_one('tbl', {'a':1,'b':'x'}) | Один INSERT |
+| insert_many('tbl', [ {...}, {...} ]) | Пакетная вставка, вызывает insert_one для каждого словаря |
+| update('tbl', {'a':10}, where='b="x"') | UPDATE tbl SET a = 10 WHERE … |
+| delete('tbl', 'a>100') | DELETE FROM tbl WHERE … |
+| clear_table('tbl') | DELETE FROM tbl |
+| create_table('tbl', columns=('c1 TEXT','c2 INT'), referense='…') | Создаёт таблицу, если не существует |
